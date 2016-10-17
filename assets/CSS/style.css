@@ -1,0 +1,93 @@
+body{
+	background-color: #cccc00;
+}
+
+h1{
+	text-align: center;
+	color: darkblue;
+	font-family: 'Bungee Inline', cursive;
+}
+
+h2{
+	text-align: center;
+	color: darkblue;
+	font-family: 'Amita', cursive;
+}
+
+h3{
+	color: darkblue;
+	font-family: 'Indie Flower', cursive;
+}
+
+h4{
+	text-align: center;
+	color: darkblue;
+}
+
+li{
+	font-family: 'Eczar', serif;
+	font-size: 14px;
+}
+
+.ol{
+	font-family: 'Bungee Inline', cursive;
+}
+
+/*How do I change text font WITHOUT changing glyphicon???*/
+/*button{
+	font-family: 'Indie Flower', cursive;
+}*/
+
+#pic1{
+	border: 2px solid black;
+	border-radius: 90px;
+	float: left;
+	height: 200px;
+	margin: 0px 15px 15px 15px;	
+}
+
+#pic2{
+	border: 2px solid black;
+	border-radius: 50%;
+	margin: 0px 15px 15px 15px;
+}
+
+#pic3{
+	border: 2px solid black;
+	border-radius: 90px;
+	width: 350px;
+	height: 230px;
+	float: right;
+	margin: 0px 15px 15px 15px;	
+}
+
+/* This is underlining "Dog care tips" */
+u{
+	color: darkblue;
+}
+
+table, th, td{
+	border: 2px solid black;
+	margin: auto;
+	padding: 5px;
+}
+
+th{
+	color: black;
+	font-size: 20px;
+	font-family: 'Amita', cursive;
+}
+
+td{
+	background-color: #b3b300;
+}
+
+tbody{
+	background-color: #808000;
+}
+
+td{
+	color: #3d3d29;
+	font-family: 'Indie Flower', cursive;
+	font-size: 15px;
+}
