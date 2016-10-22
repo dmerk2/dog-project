@@ -16,4 +16,10 @@ $(document).ready(function(){
 		$("#pic3").slideUp(3000);
 		$("#pic3").slideDown(3000);
 	});
+
+// $("#shelterSearch").click(function(){
+	
+// });
+
+
 });

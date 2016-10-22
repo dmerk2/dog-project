@@ -1,5 +1,5 @@
 body{
-	background-color: #cccc00;
+	background: linear-gradient(yellow, darkorange, yellow);
 }
 
 h1{
@@ -152,7 +152,6 @@ input[type=text]{
 
 .otherPets{
 	font-size: 14px;
-	color: darkred;
 }
 
 #submitButton{

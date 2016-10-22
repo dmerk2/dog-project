@@ -11,7 +11,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <!-- Linking to site in order to import different fonts -->
 <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Indie+Flower" rel="stylesheet">
-<!-- Linking to my external style.css -->
+<!-- Linking to external style.css -->
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<title>Dog Project</title>
 </head>
@@ -27,14 +27,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" id="dogsColor">Dogs</a>
+      <a class="navbar-brand" id="dogsColor">Save a Life Today!</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="https://www.allpaws.com/?gclid=CjwKEAjw-abABRDquOTJi8qdojwSJABt1S1OpeYkaA4AXvDReaDTlZbIIDr_eQI9KmUtxT9FWoZprBoCvSzw_wcB" id="adoptingColor">Adopting <span class="sr-only">(current)</span></a></li>
-        <li><a href="http://theshelteranimalproject.com/foster/" id="fosteringColor">Fostering</a></li>
+        <li class="active"><a href="https://www.allpaws.com/?gclid=CjwKEAjw-abABRDquOTJi8qdojwSJABt1S1OpeYkaA4AXvDReaDTlZbIIDr_eQI9KmUtxT9FWoZprBoCvSzw_wcB" id="adoptingColor">Adopt<span class="sr-only">(current)</span></a></li>
+        <li><a href="http://theshelteranimalproject.com/foster/" id="fosteringColor">Foster</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="searchColor">Search <span class="caret"></span></a>
           <ul class="dropdown-menu" id="dropdown">
@@ -51,7 +51,7 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Find a shelter near you">
         </div>
-        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="submit" class="btn btn-primary" id="shelterSearch">Search</button>
       </form>
       </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -250,15 +250,14 @@
   	<input type="radio" name="alergies" value="yes"><span> Yes</span><br/>
   	<input type="radio" name="alergies" value="no"><span> No</span><br/>
   <h4>10. Do you have any other pets?</h4>
-  	<input type="radio" name="health" value="yes"><span> Yes</span><br/>
-  		<h5>If so what kind?</h5>
+  	<input type="radio" name="otherPets" value="yes"><span> Yes</span><br/>
+  	<input type="radio" name="otherPets" value="no"><span> No</span><br/>
+  		<h5>If yes what kind?</h5>
   			<input type="checkbox" name="otherPets"><span class="otherPets"> Dogs</span><br/>
   			<input type="checkbox" name="otherPets"><span class="otherPets"> Cats</span><br/>
   			<input type="checkbox" name="otherPets"><span class="otherPets"> Birds</span><br/>
   			<input type="checkbox" name="otherPets"><span class="otherPets"> Reptiles</span><br/>
   			<input type="checkbox" name="otherPets"><span class="otherPets"> Other</span><br/><br/>
-  	<input type="radio" name="health" value="no"><span> No</span><br/>
-  	<br/>
 
   	<h4>Click to find out what dog best fits you!</h4><button type="button" name="submit" class="btn btn-primary" id="submitButton">Submit</button>
   </form>
