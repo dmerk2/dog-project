@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Linking to bootstrap -->
+<!-- Linking to JQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- Linking to JavaScript -->
+<script type="text/javascript" src="assets/js/js.js"></script>
+<!-- Linking to bootstrap CSS-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Linking to bootstrap Javascript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <!-- Linking to site in order to import different fonts -->
 <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Indie+Flower" rel="stylesheet">
 <!-- Linking to my external style.css -->
@@ -10,6 +16,46 @@
 	<title>Dog Project</title>
 </head>
 <body>
+
+<nav class="navbar navbar-default" id="navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="dogsColor">Dogs</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://www.allpaws.com/?gclid=CjwKEAjw-abABRDquOTJi8qdojwSJABt1S1OpeYkaA4AXvDReaDTlZbIIDr_eQI9KmUtxT9FWoZprBoCvSzw_wcB" id="adoptingColor">Adopting <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://theshelteranimalproject.com/foster/" id="fosteringColor">Fostering</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="searchColor">Search <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="dropdown">
+            <li><a href="https://www.chewy.com/b/toys-315?gclid=CjwKEAjw-abABRDquOTJi8qdojwSJABt1S1O37FBTE0pjXAxDx8tCK2ws5iU3BKBZdqCWjZxEJHj_RoCeHTw_wcB&gclsrc=aw.ds">Dog Toys</a></li>
+            <li><a href="https://www.chewy.com/b/treats-335?gclid=CjwKEAjw-abABRDquOTJi8qdojwSJABt1S1OjT7xDqfCedK0y0rExtRaUlG0Y-XtR0wtXJM8O0FfKRoCpljw_wcB&gclsrc=aw.ds">Dog Treats</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://www.caninecompany.com/obedience-training/?&gclid=CjwKEAjw-abABRDquOTJi8qdojwSJABt1S1OMC4g2i7cyo-uNqZXWQa2YWRyhMT0IgaNQ3DD49IzvxoCk_3w_wcB">Training</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://dogs.about.com/od/faqs/">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Find a shelter near you">
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+      </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 	<strong><h1>Adopt a Dog Today!</h1></strong>
 
@@ -76,7 +122,7 @@
 			<li>Take care to keep your dog safe in the car: Even on a 78°F day, the temperature inside a shaded car is 90°F, while the inside of a car parked in the sun can reach 160°F in minutes. Animals don't perspire as we do and can quickly succumb to heatstroke. Countless animals are killed, injured, or lost on commercial flights each year. Temperatures can become extremely hot or cold in airplane cargo holds, and the noise is deafening. Kennels can be stressful and scary and even harbor disease. Travelers should have a trusted friend or relative look after their dogs at home, where they'll be the most comfortable.</li>
 	</ul>
 
-<h4>10 breeds and what they are known for</h4>
+<h4 id="tenBreeds">10 breeds and what they are known for</h4>
 
 <table>
 	<tr>
@@ -160,7 +206,62 @@
 	</ol>
  </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/js.js"></script>
+ <h1>What kind of dog is perfect for you?</h1>
+
+  <form>
+  <h4>1. What gender do you prefer?</h4>
+ 	<input type="radio" name="gender" value="male"><span> Male</span><br/>
+ 	<input type="radio" name="gender" value="female"><span> Female</span><br/>
+ 	<input type="radio" name="gender" value="anySize"><span> Either Gender</span><br/>
+  <h4>2. Between what ages do you prefer?</h4>
+ 	<input type="text" name="age" placeholder="Youngest Age"> -
+ 	<input type="text" name="age" placeholder="Oldest Age"><br/>
+  <h4>3. What size do you prefer?</h4>
+ 	<input type="radio" name="size" value="small"><span> Small</span><br/>
+ 	<input type="radio" name="size" value="medium"><span> Medium</span><br/>
+ 	<input type="radio" name="size" value="large"><span> Large</span><br/>
+ 	<input type="radio" name="size" value="anySize"><span> Any size</span><br/>
+  <h4>4. What energy level would you like your dog to have?</h4>
+  	<input type="radio" name="size" value="lowEnergy"><span> Low Energy</span><br/>
+  	<input type="radio" name="size" value="moderateEnergy"><span> Moderate Energy</span><br/>
+  	<input type="radio" name="size" value="highEnergy"><span> High Energy</span><br/>
+  <h4>5. Are there children in your home?</h4>
+  	<input type="radio" name="childInHome" value="yes"><span> Yes</span><br/>
+  	<input type="radio" name="childInHome" value="no"><span> No</span><br/>
+  <h4>6. What are the main traits are you looking for?</h4>
+  	<input type="checkbox" name="trait" value="familyFriendly"><span> Family Friendly</span><br/>
+  	<input type="checkbox" name="trait" value="protection"><span> Protection</span><br/>
+  	<input type="checkbox" name="trait" value="hunting"><span> Hunting</span><br/>
+  	<input type="checkbox" name="trait" value="companion"><span> Companion</span><br/>
+  	<input type="checkbox" name="trait" value="noShedding"><span> Little to no shedding</span><br/>
+  	<input type="checkbox" name="trait" value="training"><span> Easy to train</span><br/>
+  	<input type="checkbox" name="trait" value="intelligent"><span> Intelligent</span><br/>
+  	<input type="checkbox" name="trait" value="noviceOwners"><span> Good for Novice Owners</span><br/>
+  <h4>7. What size of home do you have?</h4>
+  	<input type="radio" name="home"><span> Apartment</span><br/>
+  	<input type="radio" name="home"><span> Townhouse with yard</span><br/>
+  	<input type="radio" name="home"><span> Townhouse with no yard</span><br/>
+  	<input type="radio" name="home"><span> House with yard</span><br/>
+  	<input type="radio" name="home"><span> House with no yard</span><br/>
+  <h4>8. Do you have any allergies?</h4>
+  	<input type="radio" name="alergies" value="yes"><span> Yes</span><br/>
+  	<input type="radio" name="alergies" value="no"><span> No</span><br/>
+  <h4>9. Does drooling bother you?</h4>
+  	<input type="radio" name="alergies" value="yes"><span> Yes</span><br/>
+  	<input type="radio" name="alergies" value="no"><span> No</span><br/>
+  <h4>10. Do you have any other pets?</h4>
+  	<input type="radio" name="health" value="yes"><span> Yes</span><br/>
+  		<h5>If so what kind?</h5>
+  			<input type="checkbox" name="otherPets"><span class="otherPets"> Dogs</span><br/>
+  			<input type="checkbox" name="otherPets"><span class="otherPets"> Cats</span><br/>
+  			<input type="checkbox" name="otherPets"><span class="otherPets"> Birds</span><br/>
+  			<input type="checkbox" name="otherPets"><span class="otherPets"> Reptiles</span><br/>
+  			<input type="checkbox" name="otherPets"><span class="otherPets"> Other</span><br/><br/>
+  	<input type="radio" name="health" value="no"><span> No</span><br/>
+  	<br/>
+
+  	<h4>Click to find out what dog best fits you!</h4><button type="button" name="submit" class="btn btn-primary" id="submitButton">Submit</button>
+  </form>
+
 </body>
 </html>

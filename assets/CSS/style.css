@@ -20,6 +20,18 @@ h3{
 }
 
 h4{
+	font-family: 'Bungee Inline', cursive;
+	padding-left: 20px;
+	color: darkblue;
+}
+
+h5{
+	color: darkblue;
+	font-family: 'Bungee Inline', cursive;
+	padding-left: 25px;
+}
+
+#tenBreeds{
 	text-align: center;
 	color: darkblue;
 }
@@ -90,4 +102,60 @@ td{
 	color: #3d3d29;
 	font-family: 'Indie Flower', cursive;
 	font-size: 15px;
+}
+
+form{
+	float: left;
+	font-family: 'Eczar', serif;
+	padding-left: 30px;
+}
+
+span{
+	font-weight: bold;
+	font-size: 17px;
+	color: black;
+}
+
+input[type=text]{
+	width: 90px;
+}
+
+#breedSearch{
+	width: 130px;
+}
+
+#navbar{
+	background: linear-gradient(darkorange, yellow);
+	border: 1px solid black;
+}
+
+#adoptingColor{
+	background: linear-gradient(darkorange, yellow);
+	color: black;
+}
+
+#dropdown{
+	background: linear-gradient(darkorange, yellow);
+}
+
+#dogsColor{
+	color: black;
+}
+
+#fosteringColor{
+	color: black;
+}
+
+#searchColor{
+	color: black;
+}
+
+.otherPets{
+	font-size: 14px;
+	color: darkred;
+}
+
+#submitButton{
+	margin-left: 60px;
+	font-weight: bold;
 }
